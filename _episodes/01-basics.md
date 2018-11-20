@@ -38,11 +38,11 @@ more recent version.
 Once you think of changes as separate from the document itself, you
 can then think about "playing back" different sets of changes on the base document, ultimately
 resulting in different versions of that document. For example, two users can make independent
-sets of changes on the same document. 
+sets of changes on the same document - these changes can be organized into separate "branches", or groupings of work that can be shared. 
 
 ![Different Versions Can be Saved](../fig/versions.svg)
 
-Unless there are conflicts, you can even incorporate two sets of changes into the same base document.
+Unless there are conflicts, you can even incorporate two sets of changes into the same base document, or "merged".
 
 ![Multiple Versions Can be Merged](../fig/merge.svg)
 
@@ -52,7 +52,7 @@ decide which changes will be made to the next version (each record of these chan
 [commit]({{ page.root }}/reference#commit)), and keeps useful metadata about them. The
 complete history of commits for a particular project and their metadata make up
 a [repository]({{ page.root }}/reference#repository). Repositories can be kept in sync
-across different computers, facilitating collaboration among different people.
+across different computers, facilitating collaboration among different people. Git offers a lightweight solution to frequent branching and merging of shared documents. 
 
 > ## The Long History of Version Control Systems
 >
