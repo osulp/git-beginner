@@ -136,7 +136,8 @@ Changes to be committed:
 
 > ## I get a warning in Windows
 >
-> Windows users may see the warning "LF will be replaced by CRLF in mars.txt.". 
+> Windows users may see the warning "LF will be replaced by CRLF in mars.txt. 
+> The file will have its original line endings in your working directory ". 
 > This has to do with how the end of a line is represented in your document. 
 > Windows uses a carriage return (CR) character and a linefeed (LF) character 
 > at the end of a line. Mac and Linux use only linefeed characters. This fact 
