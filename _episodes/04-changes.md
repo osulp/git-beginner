@@ -134,7 +134,18 @@ Changes to be committed:
 ~~~
 {: .output}
 
-Windows users may see the warning "LF will be replaced by CRLF in mars.txt.". This has to do with how the end of a line is represented in your document. Windows uses a carriage return (CR) character and a linefeed (LF) character at the end of a line. Mac and Linux use only linefeed characters. This fact can create issues when collaborators of a same project use different platforms. nano is creating LF endings and Git is automatically changing them to CRLF because you are in a Windows machine. You can safely ignore this warning. Read the [Git Configuration Guide](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration) to change this default. 
+> ## I get a warning in Windows
+>
+> Windows users may see the warning "LF will be replaced by CRLF in mars.txt.". 
+> This has to do with how the end of a line is represented in your document. 
+> Windows uses a carriage return (CR) character and a linefeed (LF) character 
+> at the end of a line. Mac and Linux use only linefeed characters. This fact 
+> can create issues when collaborators of a same project use different platforms. 
+> nano is creating LF endings and Git is automatically changing them to CRLF 
+> because you are in a Windows machine. You can safely ignore this warning. 
+> Read the [Git Configuration Guide](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration) to change this default. 
+{: .callout}
+
 
 Git now knows that it's supposed to keep track of `mars.txt`,
 but it hasn't recorded these changes as a commit yet.
