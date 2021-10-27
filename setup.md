@@ -2,9 +2,15 @@
 layout: page
 title: Setup
 ---
+# Install Git
 
 Please see [this section of the workshop template][workshop-setup]
 for instructions on installing Git.
+
+# Create a GitHub account
+
+Go to https://github.com/ and find the Sign up button. 
+Enter your e-mail and a password. Follow the instructions, which will involve [verifying your e-mail address](https://docs.github.com/en/get-started/signing-up-for-github/verifying-your-email-address). 
 
 # Create a personal access token for authentication
 
