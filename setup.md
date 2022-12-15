@@ -18,6 +18,8 @@ In order to push and pull from your Github repository you will need to authentic
 * with a personal access token
 * with an SSH pair. 
 
+Both options are relatively equal security-wise. Personal access tokens are generally easier to use, and recommended for beginners. If you are already familiar using SSH, and use them for accessing other remote systems, then SSH would be a better choice.  
+
 ## Create a personal access token for authentication
 
 In order to authenticate yourself to Github on the command line, you need to
@@ -59,6 +61,24 @@ token to you. If you lose it, you have to revoke it and create a new one.
 ![Copy Personal Access Token on GitHub](fig/github-copy-token.png)
 
 You will need to use this personal access token when GitHub asks for your username and password from the command line. 
+
+### Interacting with your repository when using a personal access token
+
+The home page of the repository on GitHub includes the URL string you need to
+identify it:
+
+![Where to Find Repository URL on GitHub](../fig/github-find-repo-string.png)
+
+If you are using the personal access token authentication option you it is important to make sure that the [protocol]({{ page.root }}{% link reference.md %}#protocol) is HTTPS, and not SSH.
+
+Copy that URL from the browser, go into the local `planets` repository, and run
+this command:
+
+~~~
+$ git remote add origin https://github.com/vlad/planets.git
+~~~
+{: .language-bash}
+
 
 ## Create an SSH pair for authentication
 ### Background
@@ -226,6 +246,26 @@ Hi Vlad! You've successfully authenticated, but GitHub does not provide shell ac
 {: .output}
 
 Good! This output confirms that the SSH key works as intended. We are now ready to push our work to the remote repository.
+
+### Interacting with your repository when using SSH keys
+
+The home page of the repository on GitHub includes the URL string you need to
+identify it:
+
+![Where to Find Repository URL on GitHub](../fig/github-find-repo-string.png)
+
+If you are using the SSH authentication option you it is important to make sure that the [protocol]({{ page.root }}{% link reference.md %}#protocol) is SSH, and not HTTPS.
+
+![Changing the Repository URL on GitHub](../fig/github-change-repo-string.png)
+
+Copy that URL from the browser, go into the local `planets` repository, and run
+this command:
+
+~~~
+$ git remote add origin git@github.com:vlad/planets.git
+~~~
+{: .language-bash}
+
 
 # Start in the Desktop folder
 
