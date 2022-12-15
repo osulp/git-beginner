@@ -250,11 +250,7 @@ Good! This output confirms that the SSH key works as intended. We are now ready 
 ### Interacting with your repository when using SSH keys
 
 The home page of the repository on GitHub includes the URL string you need to
-identify it:
-
-![Where to Find Repository URL on GitHub](fig/github-find-repo-string.png)
-
-If you are using the SSH authentication option you it is important to make sure that the [protocol]({{ page.root }}{% link reference.md %}#protocol) is SSH, and not HTTPS.
+identify it. If you are using the SSH authentication option you it is important to make sure that the [protocol]({{ page.root }}{% link reference.md %}#protocol) is SSH, and not HTTPS.
 
 ![Changing the Repository URL on GitHub](fig/github-change-repo-string.png)
 
