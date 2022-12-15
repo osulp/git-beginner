@@ -67,7 +67,7 @@ You will need to use this personal access token when GitHub asks for your userna
 The home page of the repository on GitHub includes the URL string you need to
 identify it:
 
-![Where to Find Repository URL on GitHub](../fig/github-find-repo-string.png)
+![Where to Find Repository URL on GitHub](fig/github-find-repo-string.png)
 
 If you are using the personal access token authentication option you it is important to make sure that the [protocol]({{ page.root }}{% link reference.md %}#protocol) is HTTPS, and not SSH.
 
@@ -252,11 +252,11 @@ Good! This output confirms that the SSH key works as intended. We are now ready 
 The home page of the repository on GitHub includes the URL string you need to
 identify it:
 
-![Where to Find Repository URL on GitHub](../fig/github-find-repo-string.png)
+![Where to Find Repository URL on GitHub](fig/github-find-repo-string.png)
 
 If you are using the SSH authentication option you it is important to make sure that the [protocol]({{ page.root }}{% link reference.md %}#protocol) is SSH, and not HTTPS.
 
-![Changing the Repository URL on GitHub](../fig/github-change-repo-string.png)
+![Changing the Repository URL on GitHub](fig/github-change-repo-string.png)
 
 Copy that URL from the browser, go into the local `planets` repository, and run
 this command:
