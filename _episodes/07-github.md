@@ -191,6 +191,7 @@ To https://github.com/vlad/planets.git
 ~~~
 {: .output}
 
+
 > ## Proxy
 >
 > If the network you are connected to uses a proxy, there is a chance that your
@@ -266,6 +267,35 @@ Already up-to-date.
 Pulling has no effect in this case because the two repositories are already
 synchronized.  If someone else had pushed some changes to the repository on
 GitHub, though, this command would download them to our local repository.
+
+> ## Warning
+> 
+> Some Git versions will give you the following warning when trying to pull:
+> ~~~
+> warning: Pulling without specifying how to reconcile divergent branches is
+> discouraged. You can squelch this message by running one of the following
+> commands sometime before your next pull:
+>
+> git config pull.rebase false  # merge (the default strategy)
+> git config pull.rebase true   # rebase
+> git config pull.ff only       # fast-forward only
+>
+> You can replace "git config" with "git config --global" to set a default
+> preference for all repositories. You can also pass --rebase, --no-rebase,
+> or --ff-only on the command line to override the configured default per
+> invocation.
+> 
+> remote: Enumerating objects: 4, done.
+> remote: Counting objects: 100% (4/4), done.
+> remote: Compressing objects: 100% (4/4), done.
+> remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+> Unpacking objects: 100% (4/4), 51.49 KiB | 850.00 KiB/s, done.
+> ~~~
+> 
+> Use the first option to set the default to merge for this repository
+> ``` git config pull.rebase false```
+> 
+{: .callout}
 
 > ## GitHub GUI
 >
